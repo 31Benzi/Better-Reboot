@@ -1,0 +1,9 @@
+script_template: "custom-inno-setup-script.iss"
+app_id: 31868Benzi.RebootLauncher
+publisher_name: Benzi
+publisher_url: https://github.com/31Benzi/Better-Reboot
+display_name: Better Reboot Launcher
+install_dir_name: Better Reboot Launcher
+create_desktop_icon: true
+locales:
+  - en

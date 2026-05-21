@@ -1,0 +1,3 @@
+auth_backend/profiles/** linguist-vendored
+auth_backend/responses/** linguist-vendored
+gui/assets/backend/** linguist-vendored

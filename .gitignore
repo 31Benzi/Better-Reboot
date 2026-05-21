@@ -1,0 +1,84 @@
+# --- Build outputs & binaries ---
+*.exe
+*.dll
+*.pdb
+*.so
+*.dylib
+*.msi
+reboot_auth.exe
+lawinserver.exe
+dist/
+out/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+**/build/
+!**/build.bat
+!auth_backend/build.bat
+.flutter-plugins
+.flutter-plugins-dependencies
+**/doc/api/
+app.*.symbols
+app.*.map.json
+gui/windows/flutter/ephemeral/
+gui/windows/cmake-build-debug/
+lib/generated_plugin_registrant.dart
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# C/C++ & Windows build
+[Bb]in/
+[Oo]bj/
+*.obj
+*.ilk
+*.exp
+*.lib
+*.user
+*.suo
+*.cache
+
+# Logs & temp
+*.log
+launcher.log
+*.tmp
+*.temp
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+
+# IDE & OS
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.atom/
+.history/
+.svn/
+
+# Local / dev-only packaging (hardcoded absolute paths)
+gui/windows/packaging/exe/custom-reboot.iss
+
+# Optional dependency binaries (download separately; see gui/dependencies/README.md)
+gui/dependencies/dlls/
+gui/dependencies/redist/
+
+# Backend static data: canonical copy lives in auth_backend/
+# Sync into gui/assets/backend before build/run (scripts/sync-backend-assets.bat)
+gui/assets/backend/CloudStorage/
+gui/assets/backend/Config/
+gui/assets/backend/profiles/
+gui/assets/backend/public/
+gui/assets/backend/responses/
+
+# Keep example Discord RPC config out of git if you use local overrides
+# gui/lib/src/config/discord_rpc_config.local.dart
